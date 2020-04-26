@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.theme-btn.cancel-btn {background:#6c757d;color: #ffffff;}
+.mat-calendar-body-cell-content {font-family: 'poppinsregular';}
+.mat-dialog-container {position: relative;}
+.close-btn {position: absolute;top: 20px;right: 15px; }
+.close-btn .material-icons {color: #000000;}

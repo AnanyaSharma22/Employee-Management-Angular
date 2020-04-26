@@ -1,0 +1,38 @@
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<h1>Employee Records</h1>
+<div>
+    <button (click)="addEmployee()">
+      Add Employee
+    </button>
+    <button (click)="signOut()">
+       Sign Out
+    </button>
+</div>
+<table>
+  <tr>
+    <th>Employee Name</th>
+    <th>Adress</th>
+    <th>City</th>
+    <th>Mobile Number</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let item of dataSource">
+    <td>{{item.firstname}} {{item.lastname}}</td>
+    <td>{{item.address}}</td>
+    <td>{{item.city}}</td>
+    <td>{{item.mobile_number}}</td>
+    <td><button (click)="editEmployee(item.id)">Edit</button> </td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+.login-background {display: flex;justify-content: center;align-items: center;height: 100vh;background: #F5F5F9;}
+.login-container {border-radius: 10px;width: 840px;display: flex;height: 600px;}
+.logo {display: flex;justify-content: center;align-items: center;flex: 0 0 33.333333%;max-width: 33.333333%;border-radius: 10px 0 0 10px;background: #1d0b35;}
+.logo-name {color: #F5F5F9;}
+.login-form {box-sizing: border-box;border-radius: 0 10px 10px 0;background: #fff;justify-content: center;align-items: flex-start;display: flex;padding-right: 50px;padding-left: 45px;flex-direction: column;-webkit-box-flex: 0;-ms-flex: 0 0 66.666667%;flex: 0 0 66.666667%;max-width: 66.666667%;}
+.heading-container {margin-bottom: 52px;}
+.heading-container h2 {font-size: 25px;letter-spacing: -0.5px;font-family: 'poppinsmedium';color: #3c3f5a;margin-bottom: 7px;font-weight: normal;}
+.form-group a {color: #979797;}
+.full-width {float: left; width: 100%;}
+.mat-form-field { color: #484848;font-size: 15px;font-family: 'poppinsregular';}
+.mat-input-element, .mat-form-field-label {padding-left: 36px;}
+.login-form form .form-group input {  padding: 5px 36px;}
+/* .login-form form .form-group:first-child input {background: url(/assets/images/email-icon.svg) no-repeat left center;background-position: 0 5px;}  */
+/* .login-form form .form-group:nth-child(2) input {background: url(/assets/images/password-icon.svg) no-repeat left top;} */
+.theme-btn{ transition: all 0.2s;cursor: pointer;width: 142.7px;height: 50px;border-radius: 27.3px;background-color: #29F2B1;font-size: 14px;font-family: 'poppinsmedium';color: #494844;padding: 0 30px; margin-top: 10px;}
+.theme-btn:hover {background-color: #1d0b35;    color: #fff}
+.form-group .mat-icon {font-size: 24px !important;}
+.form-group {margin-bottom: 10px;}

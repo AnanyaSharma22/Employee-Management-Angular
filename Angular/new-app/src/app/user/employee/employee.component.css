@@ -1,0 +1,10 @@
+.mat-tooltip-panel {font-size: 100px; color: red;}
+.info-btn {background: transparent;}
+.approve-btn {background: #6c757d;color: #ffffff;}
+.reject-btn {background: transparent;border: 1px solid #dbdeeb;}
+.full-width {float: left;width: 100%;text-align: right;}
+.view-btn {background: #dbdeeb;transition: all 0.2s;border-radius: 5px;font-size: 13px;font-family: 'poppinsregular';color: #7e828a;text-decoration: none;padding: 8px 21px 7px;display: inline-block;line-height: normal;}
+.buttons-container {margin:  10px 0;}
+.view-btn {margin-top: 17px;}
+.search-field .mat-form-field, .search-field .mat-form-field-flex { float: right; width: 350px;}
+.transaction-list li {width: 200px;}

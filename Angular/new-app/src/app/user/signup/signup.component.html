@@ -1,0 +1,65 @@
+<div class="login-background">
+    <div class="login-container">
+      <div class="logo">
+        <p class="logo-name">Employee Management</p>
+      </div>
+      <div class="login-form">
+        <div class="heading-container">
+          <h2>Sign up in to your account</h2>
+          <mat-error *ngIf="errorMessage">
+              {{errorMessage}}
+          </mat-error>
+        </div> 
+        <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="full-width"> 
+          <mat-form-field class="full-width form-group">
+            <input matInput placeholder="Email" formControlName="email" [errorStateMatcher]="matcher">
+            <mat-error *ngIf="signupForm.controls.email.hasError('email') && !signupForm.controls.email.hasError('required')">
+              Please enter a valid email
+            </mat-error>
+            <mat-error *ngIf="signupForm.controls.email.hasError('required')">
+              Email is <strong>required</strong>
+            </mat-error>
+          </mat-form-field> 
+          <mat-form-field class="full-width form-group">
+            <input matInput placeholder="Password" formControlName="password" [type]="hide ? 'text' : 'password'">
+            <a href="javascript:void(0);" mat-icon-button matSuffix (click)="hide = !hide"
+                [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+            </a>
+            <mat-error *ngIf="signupForm.controls.password.hasError('required')">
+              Password is <strong>required</strong>
+            </mat-error> 
+          </mat-form-field> 
+
+          <mat-form-field class="full-width form-group">
+            <input matInput placeholder="Firstname" formControlName="firstname">
+            <mat-error *ngIf="signupForm.controls.firstname.hasError('required')">
+              Firstname is <strong>required</strong>
+            </mat-error>
+          </mat-form-field> 
+
+          <mat-form-field class="full-width form-group">
+            <input matInput placeholder="Lastname" formControlName="lastname">
+            <mat-error *ngIf="signupForm.controls.lastname.hasError('required')">
+              Lastname is <strong>required</strong>
+            </mat-error>
+          </mat-form-field> 
+
+          <mat-form-field class="full-width form-group">
+            <input matInput placeholder="Company" formControlName="company">
+            <mat-error *ngIf="signupForm.controls.company.hasError('required')">
+              Company is <strong>required</strong>
+            </mat-error>
+          </mat-form-field> 
+          <button type="submit" mat-button mat-raised-button class="theme-btn">SIGN UP</button> 
+        </form> 
+
+      </div>
+    </div> 
+    <div>
+      <p>
+        Already Registered?
+        <button type="submit" mat-button mat-raised-button class="theme-btn" routerLink="/users/login" >Login</button> 
+      </p>
+    </div>
+  </div>

@@ -1,0 +1,21 @@
+.full-width {
+    float: left;
+    width: 100%;
+  }
+  
+  .full-width {
+    margin-bottom: 13px;
+  }
+  
+  .mat-dialog-title {
+    font-family: 'poppinsregular';
+    font-size: 19px;
+    color: #000;
+  }
+  
+  .mat-dialog-actions {
+    padding-bottom: 30px;
+    display: block !important;
+    text-align: center;
+  }
+  

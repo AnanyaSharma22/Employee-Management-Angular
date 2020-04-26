@@ -1,0 +1,46 @@
+<h2 mat-dialog-title>Add/Edit Employee Details</h2>
+<!-- <a class="close-btn" (click)="close()" href="javascript:void(0);" title="Close">
+  <i class="material-icons">close</i>
+</a> -->
+ <form  class="full-width new-pot" class="full-width new-pot" [formGroup]="employeeForm">
+<div mat-dialog-content>
+    <mat-form-field class="full-width form-group">
+        <input matInput formControlName="firstname" maxlength="30" placeholder="Firstname"/>
+    </mat-form-field>
+    <mat-error *ngIf="employeeForm.controls.firstname.hasError('required') && submitted">
+      Firstname is <strong>required</strong>
+    </mat-error>
+    <mat-form-field class="full-width form-group">
+      <input matInput formControlName="lastname" maxlength="30" placeholder="Lastname"/>
+    </mat-form-field>
+    <mat-error *ngIf="employeeForm.controls.lastname.hasError('required') && submitted">
+      Lastname is <strong>required</strong>
+    </mat-error>
+    <mat-form-field class="full-width form-group">
+       <input matInput formControlName="address" maxlength="75" placeholder="Adress"/>
+    </mat-form-field>
+    <mat-error *ngIf="employeeForm.controls.address.hasError('required') && submitted">
+        Address is <strong>required</strong>
+    </mat-error>
+    <mat-form-field class="full-width form-group">
+        <input matInput formControlName="city" maxlength="30" placeholder="City"/>
+    </mat-form-field>
+    <mat-error *ngIf="employeeForm.controls.city.hasError('required') && submitted">
+        City is <strong>required</strong>
+    </mat-error>
+    <mat-form-field class="full-width form-group">
+      <input matInput formControlName="mobile_number" maxlength="20" digitOnly placeholder="Mobile Number"/>
+    </mat-form-field>
+    <mat-error *ngIf="employeeForm.controls.mobile_number.hasError('required') && submitted">
+      Mobile Number is <strong>required</strong>
+    </mat-error>
+    <mat-error *ngIf="employeeForm.controls.mobile_number.hasError('invalid') && submitted">
+      {{employeeForm.controls.mobile_number.errors.invalid}}
+    </mat-error>
+
+</div>
+<div mat-dialog-actions>
+  <button class="theme-btn cancel-btn" (click)="close()" mat-button>Cancel</button>
+  <button class="theme-btn" (click)="save()" mat-button>Save</button>
+</div>
+</form>
