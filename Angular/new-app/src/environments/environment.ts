@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiEndpoint: 'http://192.168.56.1:8000/',
+  apiEndpoint: 'http://localhost:8000/',
   client_id:'odEUW1xz0zV9hX9bcHBQ03z9SmKXrUVIrhYpWMTR',
   client_secret:'MQUjOZHB6mxqZP44exu6L5juyWHXMq0hMAfTuHSma3JVKb0WPkIS3ouq0Mv6WkoPJgTik3baRSlMaTkLLTCSgRXJuBkWsicbTW7t0mXeuFbU3kQcaWfPRyw83qc0YICd',
   username:'appuser@gmail.com',
